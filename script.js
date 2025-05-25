@@ -1,16 +1,7 @@
 "use strict";
 
-// 10秒ごとに現在時刻をアラート表示する時計プログラム
-
-// プログラムメモ
-// やりたいことメモ
-// 一度だけ表示する背景
-// 二段ジャンプ処理
-// 配列で出てくる敵を増やす
-// 餌を表示して得点をプラス
-// キャンパス、描画に関する関数
+// 初期設定
 let canvas, g;
-// xは横、ｙは縦、いまじはキャラクターの画像
 let characterPosX, characterPosY, characterimage, characterR;
 let sunPosX, sunPosY, sunimage;
 // キャラクターのシードと重力
@@ -32,8 +23,6 @@ let endButton;
 
 let score;
 let scene;
-
-
 
 let gameCount = 0;
 let frameIndex, frameCount, frameWidth, frameHeight;
@@ -64,7 +53,7 @@ onload = function kaisi() {
     // ゲームループの設定 60FPS
     setInterval(gameloop, 16);
 };
-// 呪文終わり
+
 
 // ゲームを行う際の初期値の設定
 function init() {
